@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Users Dashboard</title>
+  </head>
+  <body class="flex flex-row bg-cultured min-h-screen">
+    <!-- Sidebar -->
+    <aside
+      class="flex flex-col bg-white w-[16.25rem] rounded-lg shadow-sideNavCustom"
+    >
+      <div
+        class="relative flex flex-row py-[1.813rem] pl-8 pr-5 gap-2 items-center"
+      >
+        <img src="/src/assets/sneat-logo.svg" alt="Sneat logo" />
+
+        <div
+          class="absolute -right-5 flex p-[0.125rem] rounded-full bg-veryLightBlue border-cultured justify-center border-[0.438rem] border-solid"
+        >
+          <img
+            class="w-[1.375rem] h-[1.375rem]"
+            src="/src/assets/arrow-left-icon.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <ul class="px-4">
+        <li class="px-[0.625rem] rounded-md py-2 bg-veryLightBlueApha12">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-row">
+              <img
+                class="mr-2"
+                src="/src/assets/home-icon.svg"
+                alt="Home Icon"
+              />
+              <p
+                class="my-auto font-normal text-base font-publicSans text-veryLightBlue"
+              >
+                Dashboards
+              </p>
+            </div>
+            <img src="/src/assets/arrow-down-icon.svg" alt="Arrow Down Icon" />
+          </div>
+        </li>
+      </ul>
+
+      <ul class="px-4">
+        <li class="flex flex-row px-[0.625rem] py-2">
+          <img
+            class="ml-2 mr-4"
+            src="/src/assets/gray-dot-icon.svg"
+            alt="Gray dot"
+          />
+          <p class="font-publicSans font-normal text-base text-charcoalAlpha68">
+            eCommerce
+          </p>
+        </li>
+        <li class="flex flex-row px-[0.625rem] py-2">
+          <img
+            class="ml-1 mr-4"
+            src="/src/assets/purple-dot-icon.svg"
+            alt="Purple dot"
+          />
+          <p class="font-inter font-semibold text-base text-charcoalAlpha87">
+            CRM
+          </p>
+        </li>
+        <li class="flex flex-row px-[0.625rem] py-2">
+          <img
+            class="ml-2 mr-4"
+            src="/src/assets/gray-dot-icon.svg"
+            alt="Gray dot"
+          />
+          <p class="font-publicSans font-normal text-base text-charcoalAlpha68">
+            Analytics
+          </p>
+        </li>
+      </ul>
+
+      <!-- Divider -->
+      <div class="flex flex-row items-center pt-4 pb-2 mt-2">
+        <div
+          class="mr-4 w-4 h-0 border-solid border-charcoalAlpha12 border-[0.063rem]"
+        ></div>
+        <p class="font-publicSans font-normal text-xs text-charcoalAlpha38">
+          APPS & PAGES
+        </p>
+      </div>
+
+      <ul class="px-4 mt-2">
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img
+              class="mr-2"
+              src="/src/assets/email-icon.svg"
+              alt="Envelope Icon"
+            />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Email
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img class="mr-2" src="/src/assets/chat-icon.svg" alt="Chat Icon" />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Chat
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2 bg-charcoalAlpha4">
+          <div class="flex flex-row">
+            <img
+              class="mr-2"
+              src="/src/assets/calendar-icon.svg"
+              alt="Calendar Icon"
+            />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Calendar
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-row">
+              <img
+                class="mr-2"
+                src="/src/assets/invoice-icon.svg"
+                alt="Invoice Icon"
+              />
+              <p
+                class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+              >
+                Invoice
+              </p>
+            </div>
+            <img src="/src/assets/arrow-right-icon.svg" alt="Arrow right" />
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-row">
+              <img
+                class="mr-2"
+                src="/src/assets/user-icon.svg"
+                alt="User Icon"
+              />
+              <p
+                class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+              >
+                User
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img class="mr-2" src="/src/assets/lock-icon.svg" alt="Lock Icon" />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Roles & Permissi...
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img
+              class="mr-2"
+              src="/src/assets/pages-icon.svg"
+              alt="Pages Icon"
+            />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Pages
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img
+              class="mr-2"
+              src="/src/assets/copy-icon.svg"
+              alt="Invoice Icon"
+            />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Dialog Examples
+            </p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar -->
+
+    <div class="flex flex-col h-full w-full py-3 px-6">
+      <!-- Header navigation -->
+      <nav
+        class="flex flex-row items-center justify-between h-16 bg-white shadow-headerNavCustom px-6 py-3 rounded-lg"
+      >
+        <div class="flex flex-row space-x-2">
+          <img src="/src/assets/magnifying-icon.svg" alt="Magnifying icon" />
+          <input
+            class="ml-2 w-64 h-8 border-0 px-2"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+        <div class="flex flex-row space-x-2">
+          <img src="/src/assets/translate-icon.svg" alt="Translate icon" />
+          <img src="/src/assets/grid-icon.svg" alt="Translate icon" />
+          <img src="/src/assets/moon-icon.svg" alt="Translate icon" />
+          <img src="/src/assets/bell-icon.svg" alt="Translate icon" />
+          <img src="/src/assets/avatar-online.svg" alt="Translate icon" />
+        </div>
+      </nav>
+      <!-- End Header navigation -->
+
+      <!-- Main content -->
+      <main>
+        <!-- Cards -->
+        <section class="mt-5">
+          <div class="flex flex-row space-x-5">
+            <div
+              class="flex flex-row justify-between bg-white p-6 shadow-cardCustom rounded-lg gap-14"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="font-publicSans font-normal text-base text-charcoalAlpha60"
+                >
+                  Session
+                </p>
+                <p
+                  class="font-publicSans font-medium text-xl text-charcoalAlpha87"
+                >
+                  21,459
+                  <span class="font-publicSans font-normal text-sm text-kiwi"
+                    >(+29%)</span
+                  >
+                </p>
+                <p
+                  class="font-publicSans font-normal text-sm text-charcoalAlpha60"
+                >
+                  Total Users
+                </p>
+              </div>
+              <div class="flex flex-col">
+                <div class="bg-veryLightBlueApha12 p-2 rounded-md">
+                  <img
+                    src="/src/assets/total-users-icon.svg"
+                    alt="Total users icon"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-row justify-between bg-white p-6 shadow-cardCustom rounded-lg gap-14"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="font-publicSans font-normal text-base text-charcoalAlpha60"
+                >
+                  Paid Users
+                </p>
+                <p
+                  class="font-publicSans font-medium text-xl text-charcoalAlpha87"
+                >
+                  4,567
+                  <span class="font-publicSans font-normal text-sm text-kiwi"
+                    >(+18%)</span
+                  >
+                </p>
+                <p
+                  class="font-publicSans font-normal text-sm text-charcoalAlpha60"
+                >
+                  Last week analytics
+                </p>
+              </div>
+              <div class="flex flex-col">
+                <div class="bg-tartOrangeAlpha12 p-2 rounded-md">
+                  <img
+                    src="/src/assets/paid-users-icon.svg"
+                    alt="Paid users icon"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-row justify-between bg-white p-6 shadow-cardCustom rounded-lg gap-14"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="font-publicSans font-normal text-base text-charcoalAlpha60"
+                >
+                  Active Users
+                </p>
+                <p
+                  class="font-publicSans font-medium text-xl text-charcoalAlpha87"
+                >
+                  19,860
+                  <span
+                    class="font-publicSans font-normal text-sm text-tartOrange"
+                    >(-14%)</span
+                  >
+                </p>
+                <p
+                  class="font-publicSans font-normal text-sm text-charcoalAlpha60"
+                >
+                  Last week analytics
+                </p>
+              </div>
+              <div class="flex flex-col">
+                <div class="bg-kiwiAlpha12 p-2 rounded-md">
+                  <img
+                    src="/src/assets/active-users-icon.svg"
+                    alt="Active users icon"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-row justify-between bg-white p-6 shadow-cardCustom rounded-lg gap-14"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="font-publicSans font-normal text-base text-charcoalAlpha60"
+                >
+                  Pending Users
+                </p>
+                <p
+                  class="font-publicSans font-medium text-xl text-charcoalAlpha87"
+                >
+                  237
+                  <span class="font-publicSans font-normal text-sm text-kiwi"
+                    >(+42%)</span
+                  >
+                </p>
+                <p
+                  class="font-publicSans font-normal text-sm text-charcoalAlpha60"
+                >
+                  Last week analytics
+                </p>
+              </div>
+              <div class="flex flex-col">
+                <div class="bg-orangeYellowAlpha12 p-2 rounded-md">
+                  <img
+                    src="/src/assets/pending-users-icon.svg"
+                    alt="Pending users icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Cards -->
+
+        <!-- Table -->
+        <section
+          class="flex flex-col mt-5 bg-white shadow-tableSectionCustom rounded-lg py-6 space-y-5"
+        >
+          <h1
+            class="ml-6 font-publicSans font-medium text-xl text-charcoalAlpha87"
+          >
+            Search Filters
+          </h1>
+
+          <div class="flex flex-row space-x-5 px-6">
+            <select
+              class="border-solid border-charcoalAlpha22 border-[0.063rem] py-4 px-[1.063rem] rounded-md w-[21.583rem] font-publicSans font-normal text-base text-charcoalAlpha38"
+            >
+              <option value="" selected>Select Role</option>
+            </select>
+
+            <select
+              class="border-solid border-charcoalAlpha22 border-[0.063rem] py-4 px-[1.063rem] rounded-md w-[21.583rem] font-publicSans font-normal text-base text-charcoalAlpha38"
+            >
+              <option value="" selected>Invoice Date</option>
+            </select>
+
+            <select
+              class="border-solid border-charcoalAlpha22 border-[0.063rem] py-4 px-[1.063rem] rounded-md w-[21.583rem] font-publicSans font-normal text-base text-charcoalAlpha38"
+            >
+              <option value="" selected>Invoice Status</option>
+            </select>
+          </div>
+
+          <!-- Divider -->
+          <div
+            class="border-solid border-[0.063rem] border-charcoalAlpha12 w-full"
+          ></div>
+          <!-- End Divider -->
+
+          <div class="flex flex-row p-6 justify-between">
+            <button
+              class="flex flex-row items-center border-solid border-[0.063rem] border-coolGreyAlpha50 rounded-md py-[0.438rem] px-5"
+            >
+              <img
+                class="mr-2"
+                src="/src/assets/export-icon.svg"
+                alt="Export icon"
+              />
+              <span class="font-publicSans font-medium text-sm text-coolGrey"
+                >EXPORT</span
+              >
+            </button>
+            <div class="flex flex-row space-x-5">
+              <input
+                class="border-solid border-[0.063rem] border-charcoalAlpha22 rounded-md font-publicSans font-normal text-base placeholder:font-publicSans placeholder:font-normal placeholder:text-base placeholder:text-charcoalAlpha38"
+                type="text"
+                placeholder="Search User"
+              />
+              <button
+                class="py-[0.438rem] px-5 bg-veryLightBlue rounded-md shadow-buttonCustom font-publicSans font-medium text-sm text-white"
+              >
+                ADD USER
+              </button>
+            </div>
+          </div>
+
+          <table class="">
+            <thead
+              class="font-publicSans font-medium text-xs text-charcoalAlpha87 border-solid border-[0.063rem] border-charcoalAlpha12 bg-ghostWhite"
+            >
+              <tr class="flex flex-row items-center">
+                <th class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </th>
+                <th
+                  class="flex flex-row justify-between items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  USER
+
+                  <img
+                    src="/src/assets/separator-icon.svg"
+                    alt="Separator icon"
+                  />
+                </th>
+                <th
+                  class="flex flex-row justify-between items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  ROLE<img
+                    src="/src/assets/separator-icon.svg"
+                    alt="Separator icon"
+                  />
+                </th>
+                <th
+                  class="flex flex-row justify-between items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  PLAN<img
+                    src="/src/assets/separator-icon.svg"
+                    alt="Separator icon"
+                  />
+                </th>
+                <th
+                  class="flex flex-row justify-between items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  BILLING<img
+                    src="/src/assets/separator-icon.svg"
+                    alt="Separator icon"
+                  />
+                </th>
+                <th
+                  class="flex flex-row justify-between items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  STATUS<img
+                    src="/src/assets/separator-icon.svg"
+                    alt="Separator icon"
+                  />
+                </th>
+                <th
+                  class="flex flex-row justify-between items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  ACTION<img
+                    src="/src/assets/separator-icon.svg"
+                    alt="Separator icon"
+                  />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/jordan-stevenson.svg"
+                    alt="Jordan Stevenson"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Jordan Stevenson
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @amiccoo
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-spiroDiscoBallAlpha12 p-2 rounded-full">
+                    <img src="/src/assets/editor-icon.svg" alt="Editor icon" />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Editor
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Enterprise
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Auto Debit
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-orangeYellowAlpha12 rounded-[0.25rem] text-orangeYellow py-[0.188rem] px-[0.25rem]"
+                  >
+                    PENDING
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/benedetto-rossiter.svg"
+                    alt="Benedetto Rossiter"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Benedetto Rossiter
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @brositter15
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-orangeYellowAlpha12 p-2 rounded-full">
+                    <img src="/src/assets/author-icon.svg" alt="Editor icon" />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Author
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Team
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Manual - Paypal
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-kiwiAlpha12 rounded-[0.25rem] text-kiwi py-[0.188rem] px-[0.25rem]"
+                  >
+                    ACTIVE
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/bentlee-emblim.svg"
+                    alt="Bentlee Emblim"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Bentlee Emblim
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @bemblinf
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-spiroDiscoBallAlpha12 p-2 rounded-full">
+                    <img src="/src/assets/editor-icon.svg" alt="Editor icon" />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Editor
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Company
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Manual - Cash
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-kiwiAlpha12 rounded-[0.25rem] text-kiwi py-[0.188rem] px-[0.25rem]"
+                  >
+                    ACTIVE
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/bertha-biner.svg"
+                    alt="Bertha Biner"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Bertha Biner
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @bbnerh
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-kiwiAlpha12 p-2 rounded-full">
+                    <img
+                      src="/src/assets/maintainer-icon.svg"
+                      alt="Maintainer icon"
+                    />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Maintainer
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Team
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Auto Debit
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-orangeYellowAlpha12 rounded-[0.25rem] text-orangeYellow py-[0.188rem] px-[0.25rem]"
+                  >
+                    PENDING
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/beverlie-krabbe.svg"
+                    alt="Beverlie Krabbe"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Beverlie Krabbe
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @bkrabbe1d
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-kiwiAlpha12 p-2 rounded-full">
+                    <img
+                      src="/src/assets/maintainer-icon.svg"
+                      alt="Maintainer icon"
+                    />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Maintainer
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Company
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Auto Debit
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-kiwiAlpha12 rounded-[0.25rem] text-kiwi py-[0.188rem] px-[0.25rem]"
+                  >
+                    ACTIVE
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/bradan-rosebotham.svg"
+                    alt="Bradan Rosebotham"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Bradan Rosebotham
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @brosebothamz
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-veryLightBlueApha12 p-2 rounded-full">
+                    <img
+                      src="/src/assets/subscriber-icon.svg"
+                      alt="Maintainer icon"
+                    />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Subcriber
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Enterprise
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Manual - Cash
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-orangeYellowAlpha12 rounded-[0.25rem] text-orangeYellow py-[0.188rem] px-[0.25rem]"
+                  >
+                    PENDING
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/bree-kilday.svg"
+                    alt="Bree Kilday"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Bree Kilday
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @brkildayr
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-orangeYellowAlpha12 p-2 rounded-full">
+                    <img src="/src/assets/author-icon.svg" alt="Author icon" />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Author
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Team
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Manual - Paypal
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-kiwiAlpha12 rounded-[0.25rem] text-kiwi py-[0.188rem] px-[0.25rem]"
+                  >
+                    ACTIVE
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/breena-gallemore.svg"
+                    alt="Breena Gallemore"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Breena Gallemore
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @bgallemore6
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-veryLightBlueApha12 p-2 rounded-full">
+                    <img
+                      src="/src/assets/subscriber-icon.svg"
+                      alt="Subscriber icon"
+                    />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Subscriber
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Company
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Manual - Credit Card
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-slateGrayAlpha12 rounded-[0.25rem] text-slateGray py-[0.188rem] px-[0.25rem]"
+                  >
+                    INACTIVE
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+
+              <tr
+                class="flex flex-row items-center border-solid border-[0.063rem] border-charcoalAlpha12"
+              >
+                <td class="px-6 py-[0.938rem] text-left">
+                  <input
+                    class="border-solid border-[0.063rem] border-charcoalAlpha38 rounded-sm"
+                    type="checkbox"
+                  />
+                </td>
+                <td
+                  class="flex flex-row w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <img
+                    src="/src/assets/avatars/brockie-myles.svg"
+                    alt="Brockie Myles"
+                  />
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-sm text-charcoalAlpha87"
+                    >
+                      Brockie Myles
+                    </p>
+                    <p
+                      class="font-roboto font-normal text-xs text-charcoalAlpha60"
+                    >
+                      @bmylesg
+                    </p>
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left space-x-3"
+                >
+                  <div class="bg-kiwiAlpha12 p-2 rounded-full">
+                    <img
+                      src="/src/assets/maintainer-icon.svg"
+                      alt="Maintainer icon"
+                    />
+                  </div>
+                  <p
+                    class="font-roboto font-normal text-base text-charcoalAlpha60"
+                  >
+                    Maintainer
+                  </p>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Basic
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left font-roboto font-normal text-base text-charcoalAlpha87"
+                >
+                  Manual - Credit Card
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <div
+                    class="bg-kiwiAlpha12 rounded-[0.25rem] text-kiwi py-[0.188rem] px-[0.25rem]"
+                  >
+                    ACTIVE
+                  </div>
+                </td>
+
+                <td
+                  class="flex flex-row items-center w-full px-6 py-[0.938rem] text-left"
+                >
+                  <img
+                    src="/src/assets/three-dotted-vertical.svg"
+                    alt="Three dotted vertical"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Pagination -->
+          <div
+            class="flex flex-row space-x-5 items-center justify-end w-full px-6 font-inter font-normal text-sm text-charcoalAlpha60"
+          >
+            <div class="flex flex-row items-center ">
+              <p class="">
+                Rows per page
+              </p>
+              <select class="border-0">
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+              </select>
+            </div>
+
+            <p>1-5 of 13</p>
+
+            <div class="flex flex-row">
+              <img
+                src="/src/assets/arrow-left-disabled.svg"
+                alt="Arrow left disabled"
+              />
+              <img
+                src="/src/assets/arrow-right-enabled.svg"
+                alt="Arrow right disabled"
+              />
+            </div>
+          </div>
+          <!-- End Pagination -->
+        </section>
+        <!-- End Table -->
+      </main>
+      <!-- End Main content -->
+    </div>
+  </body>
+</html>

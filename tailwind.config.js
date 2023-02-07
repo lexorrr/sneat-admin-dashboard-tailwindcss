@@ -50,6 +50,8 @@ module.exports = {
       orangeYellowAlpha12: "rgba(253, 181, 40, 0.12)",
       spiroDiscoBall: "#26C6F9",
       spiroDiscoBallAlpha12: "rgba(38, 198, 249, 0.12)",
+      slateGray: "#6D788D",
+      slateGrayAlpha12: "rgba(109, 120, 141, 0.12)",
     },
     fontFamily: {
       notoSans: ["Noto Sans", "sans-serif"],
