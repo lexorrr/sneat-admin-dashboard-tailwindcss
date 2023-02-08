@@ -14,6 +14,7 @@ module.exports = {
     },
     dropShadow: {
       custom: "2px 0px 5px rgba(33, 33, 33, 0.2)",
+      logoCustom: "0px 4px 4px rgba(0, 0, 0, 0.25)"
     },
     colors: {
       brightGray: "#ECEFF1",
@@ -46,12 +47,14 @@ module.exports = {
       kiwiAlpha12: "rgba(114, 225, 40, 0.12)",
       tartOrange: "#FF4D49",
       tartOrangeAlpha12: "rgba(255, 77, 73, 0.12)",
+      tartOrangeAlpha50: "rgba(255, 77, 73, 0.5)",
       orangeYellow: "#FDB528",
       orangeYellowAlpha12: "rgba(253, 181, 40, 0.12)",
       spiroDiscoBall: "#26C6F9",
       spiroDiscoBallAlpha12: "rgba(38, 198, 249, 0.12)",
       slateGray: "#6D788D",
       slateGrayAlpha12: "rgba(109, 120, 141, 0.12)",
+      oriolesOrange: "#FF3E1D",
     },
     fontFamily: {
       notoSans: ["Noto Sans", "sans-serif"],
