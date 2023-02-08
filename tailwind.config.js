@@ -38,6 +38,7 @@ module.exports = {
       charcoalAlpha38: "rgba(50, 71, 92, 0.38)",
       charcoalAlpha68: "rgba(50, 71, 92, 0.68)",
       charcoalAlpha4: "rgba(50, 71, 92, 0.04)",
+      charcoalAlpha54: "rgba(50, 71, 92, 0.54)",
       veryLightBlue: "#696CFF",
       veryLightBlueApha12: "rgba(102, 108, 255, 0.12)",
       coolGrey: "#8592A3",
