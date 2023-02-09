@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>User Security</title>
+  </head>
+  <body class="flex flex-row bg-cultured min-h-screen">
+    <!-- Sidebar -->
+    <aside
+      class="flex flex-col bg-white w-[16.25rem] rounded-lg shadow-sideNavCustom"
+    >
+      <div
+        class="relative flex flex-row py-[1.813rem] pl-8 pr-5 gap-2 items-center"
+      >
+        <img src="/src/assets/sneat-logo.svg" alt="Sneat logo" />
+
+        <div
+          class="absolute -right-5 flex p-[0.125rem] rounded-full bg-veryLightBlue border-cultured justify-center border-[0.438rem] border-solid"
+        >
+          <img
+            class="w-[1.375rem] h-[1.375rem]"
+            src="/src/assets/arrow-left-icon.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <ul class="px-4">
+        <li class="px-[0.625rem] rounded-md py-2 bg-veryLightBlueApha12">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-row">
+              <img
+                class="mr-2"
+                src="/src/assets/home-icon.svg"
+                alt="Home Icon"
+              />
+              <p
+                class="my-auto font-normal text-base font-publicSans text-veryLightBlue"
+              >
+                Dashboards
+              </p>
+            </div>
+            <img src="/src/assets/arrow-down-icon.svg" alt="Arrow Down Icon" />
+          </div>
+        </li>
+      </ul>
+
+      <ul class="px-4">
+        <li class="flex flex-row px-[0.625rem] py-2">
+          <img
+            class="ml-2 mr-4"
+            src="/src/assets/gray-dot-icon.svg"
+            alt="Gray dot"
+          />
+          <p class="font-publicSans font-normal text-base text-charcoalAlpha68">
+            eCommerce
+          </p>
+        </li>
+        <li class="flex flex-row px-[0.625rem] py-2">
+          <img
+            class="ml-1 mr-4"
+            src="/src/assets/purple-dot-icon.svg"
+            alt="Purple dot"
+          />
+          <p class="font-inter font-semibold text-base text-charcoalAlpha87">
+            CRM
+          </p>
+        </li>
+        <li class="flex flex-row px-[0.625rem] py-2">
+          <img
+            class="ml-2 mr-4"
+            src="/src/assets/gray-dot-icon.svg"
+            alt="Gray dot"
+          />
+          <p class="font-publicSans font-normal text-base text-charcoalAlpha68">
+            Analytics
+          </p>
+        </li>
+      </ul>
+
+      <!-- Divider -->
+      <div class="flex flex-row items-center pt-4 pb-2 mt-2">
+        <div
+          class="mr-4 w-4 h-0 border-solid border-charcoalAlpha12 border-[0.063rem]"
+        ></div>
+        <p class="font-publicSans font-normal text-xs text-charcoalAlpha38">
+          APPS & PAGES
+        </p>
+      </div>
+
+      <ul class="px-4 mt-2">
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img
+              class="mr-2"
+              src="/src/assets/email-icon.svg"
+              alt="Envelope Icon"
+            />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Email
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img class="mr-2" src="/src/assets/chat-icon.svg" alt="Chat Icon" />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Chat
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2 bg-charcoalAlpha4">
+          <div class="flex flex-row">
+            <img
+              class="mr-2"
+              src="/src/assets/calendar-icon.svg"
+              alt="Calendar Icon"
+            />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Calendar
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-row">
+              <img
+                class="mr-2"
+                src="/src/assets/invoice-icon.svg"
+                alt="Invoice Icon"
+              />
+              <p
+                class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+              >
+                Invoice
+              </p>
+            </div>
+            <img src="/src/assets/arrow-right-icon.svg" alt="Arrow right" />
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-row">
+              <img
+                class="mr-2"
+                src="/src/assets/user-icon.svg"
+                alt="User Icon"
+              />
+              <p
+                class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+              >
+                User
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img class="mr-2" src="/src/assets/lock-icon.svg" alt="Lock Icon" />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Roles & Permissi...
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img
+              class="mr-2"
+              src="/src/assets/pages-icon.svg"
+              alt="Pages Icon"
+            />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Pages
+            </p>
+          </div>
+        </li>
+        <li class="px-[0.625rem] rounded-md py-2">
+          <div class="flex flex-row">
+            <img
+              class="mr-2"
+              src="/src/assets/copy-icon.svg"
+              alt="Invoice Icon"
+            />
+            <p
+              class="my-auto font-normal text-base font-publicSans text-charcoalAlpha68"
+            >
+              Dialog Examples
+            </p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar -->
+
+    <div class="flex flex-col h-full w-full py-3 px-6">
+      <!-- Header navigation -->
+      <nav
+        class="flex flex-row items-center justify-between h-16 bg-white shadow-headerNavCustom px-6 py-3 rounded-lg"
+      >
+        <div class="flex flex-row space-x-2">
+          <img src="/src/assets/magnifying-icon.svg" alt="Magnifying icon" />
+          <input
+            class="ml-2 w-64 h-8 border-0 px-2"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
+        <div class="flex flex-row space-x-2">
+          <img src="/src/assets/translate-icon.svg" alt="Translate icon" />
+          <img src="/src/assets/grid-icon.svg" alt="Translate icon" />
+          <img src="/src/assets/moon-icon.svg" alt="Translate icon" />
+          <img src="/src/assets/bell-icon.svg" alt="Translate icon" />
+          <img src="/src/assets/avatar-online.svg" alt="Translate icon" />
+        </div>
+      </nav>
+      <!-- End Header navigation -->
+
+      <!-- Main content -->
+      <main class="mt-5">
+        <div class="flex flex-row space-x-5">
+          <!-- Profile card column -->
+          <section class="flex flex-col space-y-5">
+            <!-- Profile details card -->
+            <div
+              class="flex flex-col p-6 bg-white shadow-cardCustom rounded-lg space-y-8"
+            >
+              <div class="flex flex-col mt-10 mx-auto space-y-4 items-center">
+                <img
+                  src="/src/assets/avatars/seth-hallam.svg"
+                  alt="Seth Hallam"
+                />
+                <p class="font-roboto font-medium text-xl text-charcoalAlpha87">
+                  Seth Hallam
+                </p>
+                <p
+                  class="px-1 py-[0.188rem] font-publicSans font-normal text-[0.813rem] text-oriolesOrange bg-tartOrangeAlpha12"
+                >
+                  ADMIN
+                </p>
+              </div>
+
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-3">
+                  <div
+                    class="flex p-2 h-11 w-11 bg-veryLightBlueApha12 rounded-lg"
+                  >
+                    <img src="/src/assets/check-icon.svg" alt="Check icon" />
+                  </div>
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-xl text-charcoalAlpha87"
+                    >
+                      1.23k
+                    </p>
+                    <p
+                      class="font-inter font-normal text-sm text-charcoalAlpha60"
+                    >
+                      Task Done
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-row space-x-3">
+                  <div
+                    class="flex p-2 h-11 w-11 bg-veryLightBlueApha12 rounded-lg"
+                  >
+                    <img src="/src/assets/star-icon.svg" alt="Star icon" />
+                  </div>
+                  <div class="flex flex-col">
+                    <p
+                      class="font-roboto font-medium text-xl text-charcoalAlpha87"
+                    >
+                      568
+                    </p>
+                    <p
+                      class="font-inter font-normal text-sm text-charcoalAlpha60"
+                    >
+                      Project Done
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col space-y-4">
+                <h1
+                  class="font-roboto font-medium text-xl text-charcoalAlpha87"
+                >
+                  Details
+                </h1>
+                <div
+                  class="border-[0.063rem] border-solid border-charcoalAlpha12 w-full h-0"
+                ></div>
+                <p
+                  class="font-inter font-semibold text-base text-charcoalAlpha60"
+                >
+                  Username:
+                  <span
+                    class="font-publicSans font-normal text-base text-charcoalAlpha60"
+                    >@shallamb</span
+                  >
+                </p>
+                <p
+                  class="font-inter font-semibold text-base text-charcoalAlpha60"
+                >
+                  Billing Email:
+                  <span
+                    class="font-inter font-semibold text-base text-charcoalAlpha60"
+                    >shallamb@gmail.com</span
+                  >
+                </p>
+                <p
+                  class="font-inter font-semibold text-base text-charcoalAlpha60"
+                >
+                  Status:
+                  <span
+                    class="font-inter font-semibold text-base text-charcoalAlpha60"
+                    >shallamb@gmail.com</span
+                  >
+                </p>
+                <p
+                  class="font-inter font-semibold text-base text-charcoalAlpha60"
+                >
+                  Role:
+                  <span
+                    class="font-inter font-semibold text-base text-charcoalAlpha60"
+                    >Subscriber</span
+                  >
+                </p>
+                <p
+                  class="font-inter font-semibold text-base text-charcoalAlpha60"
+                >
+                  Tax ID:
+                  <span
+                    class="font-inter font-semibold text-base text-charcoalAlpha60"
+                    >Tax-8894</span
+                  >
+                </p>
+                <p
+                  class="font-inter font-semibold text-base text-charcoalAlpha60"
+                >
+                  Contact:
+                  <span
+                    class="font-inter font-semibold text-base text-charcoalAlpha60"
+                    >+1 (234) 464-0600</span
+                  >
+                </p>
+                <p
+                  class="font-inter font-semibold text-base text-charcoalAlpha60"
+                >
+                  Language:
+                  <span
+                    class="font-inter font-semibold text-base text-charcoalAlpha60"
+                    >English</span
+                  >
+                </p>
+                <p
+                  class="font-inter font-semibold text-base text-charcoalAlpha60"
+                >
+                  Country:
+                  <span
+                    class="font-inter font-semibold text-base text-charcoalAlpha60"
+                    >Peru</span
+                  >
+                </p>
+              </div>
+
+              <div class="flex flex-row space-x-5 justify-center">
+                <button
+                  class="px-5 py-[0.438rem] text-white uppercase font-publicSans font-medium text-sm bg-veryLightBlue shadow-buttonCustom rounded-md"
+                >
+                  edit
+                </button>
+                <button
+                  class="px-5 py-[0.438rem] uppercase text-tartOrange font-publicSans font-medium text-sm rounded-md border-[0.063rem] border-solid border-tartOrangeAlpha50"
+                >
+                  suspend
+                </button>
+              </div>
+            </div>
+            <!-- End Profile details card -->
+
+            <!-- Plan Card -->
+            <div
+              class="flex flex-col p-6 bg-white shadow-cardCustom rounded-lg space-y-5 border-2 border-solid border-veryLightBlue"
+            >
+              <div class="flex flex-row justify-between">
+                <p
+                  class="h-fit px-1 py-[0.188rem] uppercase bg-veryLightBlueApha12 rounded-[0.25rem] font-publicSans font-normal text-[0.813rem] text-veryLightBlue"
+                >
+                  standard
+                </p>
+                <p>
+                  <span
+                    class="text-veryLightBlue font-roboto font-medium text-xl"
+                    >$</span
+                  ><span
+                    class="text-veryLightBlue font-roboto font-normal text-5xl"
+                    >99</span
+                  ><span
+                    class="font-inter font-normal text-sm text-charcoalAlpha87"
+                    >month</span
+                  >
+                </p>
+              </div>
+
+              <div class="flex flex-col">
+                <ul
+                  class="list-disc ml-5 text-charcoalAlpha60 font-publicSans font-normal text-sm space-y-2"
+                >
+                  <li>10 Users</li>
+                  <li>Up to 10 GB storage</li>
+                  <li>Basic Support</li>
+                </ul>
+              </div>
+
+              <div class="flex flex-col space-y-2">
+                <div
+                  class="flex flex-row justify-between font-inter font-semibold text-sm text-charcoalAlpha87"
+                >
+                  <p>Days</p>
+                  <p>65%</p>
+                </div>
+                <img
+                  src="/src/assets/progress-bars/progress-65.svg"
+                  alt="Progress icon 65%"
+                />
+                <p
+                  class="font-publicSans font-normal text-xs text-charcoalAlpha60"
+                >
+                  4 days remaining
+                </p>
+              </div>
+
+              <button
+                class="h-[2.375rem] rounded-md w-full bg-veryLightBlue shadow-buttonCustom uppercase text-white font-publicSans font-medium text-sm"
+              >
+                upgrade plan
+              </button>
+            </div>
+            <!-- End Plan Card -->
+          </section>
+          <!-- End Profile card column -->
+
+          <!-- Overview column -->
+          <section class="flex flex-col space-y-5 w-full">
+            <!-- Nav buttons -->
+            <div class="flex flex-row">
+              <button
+                class="flex flex-row items-center justify-center uppercase rounded-md py-[0.625rem] px-5 h-fit text-charcoalAlpha87 font-publicSans font-medium text-sm"
+              >
+                <img
+                  class="mr-2"
+                  src="/src/assets/user-icon.svg"
+                  alt="User icon"
+                />
+                account
+              </button>
+              <button
+                class="flex flex-row items-center justify-center uppercase rounded-md py-[0.625rem] px-5 h-fit font-publicSans font-medium text-sm text-charcoalAlpha87"
+              >
+                <img
+                  class="mr-2"
+                  src="/src/assets/lock-alt-icon.svg"
+                  alt="Lock icon"
+                />
+                security
+              </button>
+              <button
+                class="flex flex-row items-center justify-center uppercase bg-veryLightBlue rounded-md py-[0.625rem] px-5 h-fit text-white font-publicSans font-medium text-sm"
+              >
+                <img
+                  class="mr-2"
+                  src="/src/assets/invoice-icon.svg"
+                  alt="Invoice icon"
+                />
+                billing & plans
+              </button>
+              <button
+                class="flex flex-row items-center justify-center uppercase rounded-md py-[0.625rem] px-5 h-fit text-charcoalAlpha87 font-publicSans font-medium text-sm"
+              >
+                <img
+                  class="mr-2"
+                  src="/src/assets/bell-alt-icon.svg"
+                  alt="Bell icon"
+                />
+                notifications
+              </button>
+              <button
+                class="flex flex-row items-center justify-center uppercase rounded-md py-[0.625rem] px-5 h-fit text-charcoalAlpha87 font-publicSans font-medium text-sm"
+              >
+                <img
+                  class="mr-2"
+                  src="/src/assets/link-icon.svg"
+                  alt="Link icon"
+                />
+                connections
+              </button>
+            </div>
+            <!-- End Nav buttons -->
+
+            <!-- Current Plan -->
+            <section
+              class="flex flex-col mt-5 bg-white shadow-tableSectionCustom rounded-lg p-6 space-y-5"
+            >
+              <h1
+                class="font-publicSans font-medium text-xl text-charcoalAlpha87"
+              >
+                Current Plan
+              </h1>
+
+              <div class="flex flex-row justify-between">
+                <div
+                  class="flex flex-col font-publicSans font-normal text-sm text-charcoalAlpha60 space-y-5"
+                >
+                  <div class="flex flex-col">
+                    <p>
+                      Your Current Plan is
+                      <span
+                        class="font-inter font-semibold text-charcoalAlpha87"
+                        >Basic</span
+                      >
+                    </p>
+                    <p>A simple start for everyone</p>
+                  </div>
+                  <div class="flex flex-col">
+                    <p class="font-inter font-semibold text-charcoalAlpha87">
+                      Active until Dec 09, 2021
+                    </p>
+                    <p>We will send you a notification upon</p>
+                    <p>Subscription expiration</p>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex flex-row space-x-3 items-center">
+                      <p class="font-inter font-semibold text-charcoalAlpha87">
+                        $99 Per Month
+                      </p>
+                      <p
+                        class="uppercase px-[0.188rem] py-1 bg-veryLightBlueApha12 text-veryLightBlue rounded-[0.25rem] text-[0.813rem]"
+                      >
+                        popular
+                      </p>
+                    </div>
+                    <p>Standard plan for small to medium businesses</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col space-y-5">
+                  <div
+                    class="flex flex-col px-[0.875rem] py-4 bg-orangeYellowAlpha12 rounded-md text-orangeYellow"
+                  >
+                    <p class="font-publicSans text-base font-medium">
+                      Ensure that these requirements are met
+                    </p>
+                    <p class="font-publicSans text-sm font-normal">
+                      Minimum 8 characters long, uppercase & symbol
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex flex-col space-y-2 font-inter font-semibold text-sm text-charcoalAlpha87"
+                  >
+                    <div class="flex flex-row justify-between">
+                      <p>Days</p>
+                      <p>26 of 30 Days</p>
+                    </div>
+                    <img
+                      src="/src/assets/progress-bars/progress-87.svg"
+                      alt="Progress 87%"
+                    />
+                    <p
+                      class="font-publicSans font-normal text-xs text-charcoalAlpha60"
+                    >
+                      Your plan requires update
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-row space-x-5">
+                <button
+                  class="px-5 py-[0.438rem] text-white uppercase font-publicSans font-medium text-sm bg-veryLightBlue shadow-buttonCustom rounded-md"
+                >
+                  upgrade plan
+                </button>
+                <button
+                  class="px-5 py-[0.438rem] uppercase text-tartOrange font-publicSans font-medium text-sm rounded-md border-[0.063rem] border-solid border-tartOrangeAlpha50"
+                >
+                  cancel subscription
+                </button>
+              </div>
+            </section>
+            <!-- End Current Plan -->
+
+            <!-- Payment Methods -->
+            <section
+              class="flex flex-col mt-5 bg-white shadow-tableSectionCustom rounded-lg p-6 space-y-5"
+            >
+              <div class="flex flex-row justify-between">
+                <h1
+                  class="font-publicSans font-medium text-xl text-charcoalAlpha87"
+                >
+                  Payment Methods
+                </h1>
+                <button
+                  class="flex flex-row items-center h-[2.375rem] px-5 rounded-md bg-veryLightBlue shadow-buttonCustom uppercase text-white font-publicSans font-medium text-sm"
+                >
+                  <img src="/src/assets/plus-icon.svg" alt="Plus Icon" />
+                  add card
+                </button>
+                <!-- <button
+                  class="h-[2.375rem] px-5 rounded-md bg-veryLightBlue shadow-buttonCustom uppercase text-white font-publicSans font-medium text-sm"
+                >
+                  edit address
+                </button> -->
+              </div>
+
+              <div
+                class="flex flex-row justify-between p-5 border-[0.063rem] border-solid border-charcoalAlpha12 rounded-lg"
+              >
+                <div class="flex flex-col space-y-5">
+                  <img src="" alt="" />
+                  <div class="flex flex-row">
+                    Tom McBridge
+                    <p
+                      class="uppercase px-[0.188rem] py-1 bg-veryLightBlueApha12 text-veryLightBlue rounded-[0.25rem] text-[0.813rem]"
+                    >
+                      popular
+                    </p>
+                  </div>
+                  <p>**** **** **** 9865</p>
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex flex-row">
+                    <button>edit</button>
+                    <button>delete</button>
+                  </div>
+                  <p>Card expires at 12/24</p>
+                </div>
+              </div>
+            </section>
+            <!-- End Payment Methods -->
+          </section>
+          <!-- End Overview column -->
+        </div>
+      </main>
+      <!-- End Main content -->
+    </div>
+  </body>
+</html>
